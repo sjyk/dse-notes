@@ -79,6 +79,9 @@ Examples of semi-structured formats include XML, JSON, and other dictionar-like 
 
 In other words, the defining characteric of "structure" is that data properties can be accessed by name. All data that doesn't have this is called "unstructured". This last category includes images, video, documents, text, audio and so on. The vast majority of data in the world is "unstructured".
 
+## Readings
+Codd, Edgar F. "A relational model of data for large shared data banks." 1969
+
 
 
 
