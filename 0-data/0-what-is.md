@@ -47,6 +47,14 @@ Philisophically, data can literally be anything. However, it is useful to taxono
    - Atomic values. Each cell (a row, column pair) is generally considered to be an atomic value---i.e., it is not readily divisible--such as, an integer, a date, a string. 
    - NULL values. Missing or uncertain data can only be conveyed with a NULL/empty cell. 
 
+|----|----|
+|ColA|ColB|
+|----|----|
+| "A"| 1  |
+| "B"| 0  |
+| "F"| 1  |
+|----|----|
+   
 There are cases when such a model is too restrictive. Suppose, we were building a repository of advanced car features and which makes and models had them. We could add extra columns to indicate feature and which cars had them or not.
 ```
 Sheet 1. Car:
@@ -57,8 +65,21 @@ Sheet 1. Car:
             Col 5. HasBackupCamera <String>
             ...
 ```
-However, in this model, we would have to add columns for esoteric features as well that only occur in a small number of cars. Furthermore, each year as new features arrive, we would have to explicitly add new columns.
+However, in this model, we would have to add columns for esoteric features as well that only occur in a small number of cars. Furthermore, each year as new features arrive, we would have to explicitly add new columns. A good way of summarizing the main restriction of a tabular model is that the *schema* (or set of attributes that describe each row) is fixed and globally set. 
 
+What if we wanted a flexible schema that varied row to row? This introduces the concept of semi-structured data.
+
+*Semi-structured data*: A data structure where each row has a variable set of attributes the values are possibly not atomic.
+```
+{'name': Car1, 'features': [BackupCamera, CruiseControl]}
+{'name': Car2, 'features': [BackupCamera, ParkingAssist, CruiseControl]}
+```
+
+Examples of semi-structured formats include XML, JSON, and other dictionar-like formats. Semi-structured data, as the name implies, does still have crucial structure that is important.
+
+- Named Attributes. The properties of a given row can still be accessed by a semantic name.
+
+In other words, the defining characteric of "structure" is that data properties can be accessed by name. All data that doesn't have this is called "unstructured". This last category includes images, video, documents, text, audio and so on. The vast majority of data in the world is "unstructured".
 
 
 
