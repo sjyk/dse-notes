@@ -47,14 +47,12 @@ Philisophically, data can literally be anything. However, it is useful to taxono
    - Atomic values. Each cell (a row, column pair) is generally considered to be an atomic value---i.e., it is not readily divisible--such as, an integer, a date, a string. 
    - NULL values. Missing or uncertain data can only be conveyed with a NULL/empty cell. 
 
-|----|----|
-|ColA|ColB|
-|----|----|
-| "A"| 1  |
-| "B"| 0  |
-| "F"| 1  |
-|----|----|
-   
+| A  | B |
+|----|---|
+| -1 | 1 |
+| 0  | 0 |
+| 1  | 1 |
+
 There are cases when such a model is too restrictive. Suppose, we were building a repository of advanced car features and which makes and models had them. We could add extra columns to indicate feature and which cars had them or not.
 ```
 Sheet 1. Car:
