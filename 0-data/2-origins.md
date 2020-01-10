@@ -1,5 +1,6 @@
 # What is data good for?
+It would seem like data is everywhere...so what can we do with it?
 
-## Data-as-a-closed-world
+## Closed-world
 
-## Data-as-a-sample
+## Sample
