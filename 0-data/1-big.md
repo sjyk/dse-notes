@@ -65,4 +65,7 @@ In this model, we explicitly give the algorithm the control to page in and page 
 Data parallism is parallel computing scheme where we distribute the data across different nodes, which each operate on the data in parallel. It contrasts with task parallelism as another form of parallelism (which places computation processes on different nodes). 
 A shared-nothing architecture is a distributed-computing architecture in which each update request is satisfied by a single node (processor/memory/storage unit). The intent is to eliminate contention among nodes. Nodes do not share (independently access) memory or storage. One alternative architecture is shared everything, in which requests are satisfied by arbitrary combinations of nodes. This may introduce contention, as multiple nodes may seek to update the same data at the same time.
 
+## Readings
+Aggarwal, Alok, and Jeffrey Vitter. "The input/output complexity of sorting and related problems." 1988
 
+Vitter, Jeffrey Scott. "External memory algorithms and data structures: Dealing with massive data." 2001
