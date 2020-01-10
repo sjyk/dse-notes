@@ -18,8 +18,27 @@ If data has been around for millenia, why are we studying this now? In short, a 
 
 -  Machine learning and the rebirth of AI. Crucially the 2000s also ushered in a new software engineering paradigm based on Machine Learning. The idea that historical data could be used to "train" software to perform tasks better than any human code code changed the way we think about the value of data. 
 
+## Data Model
+It is important to recognize that digital data is artificial in a sense. They are simply electronic bits and bytes with no inherent meaning. An engineer has to define how these electronic signals correspond to real-world concepts. A *data model* defines how different pieces of digital data are organized, defines how they relate to one another, and how these representations correspond to the properties of real-world entities.
+
+For example, suppose we are collecting data about cars including the make, the model, the year, and color. A data model specified how this information will be represented on a computer in terms of data types and properties:
+```
+Car:
+   Make <String>
+   Model <String>
+   Year <Integer>
+   Color <String>
+```
+The data model could additionally consist of references to other entities (like owners), representing other kinds of things of significance in the domain, and so one. 
+
+Logical data model : describes the semantics, as represented by a particular data manipulation technology. This consists of descriptions of tables and columns, object oriented classes, and XML tags, among other things.
+
+Physical data model : describes the physical means by which data are stored. This is concerned with partitions, CPUs, tablespaces, and the like.
+
+The significance of this approach, according to ANSI, is that it allows the three perspectives to be relatively independent of each other. Storage technology can change without affecting either the logical or the conceptual model. The table/column structure can change without (necessarily) affecting the conceptual model. In each case, of course, the structures must remain consistent with the other model. The table/column structure may be different from a direct translation of the entity classes and attributes, but it must ultimately carry out the objectives of the conceptual entity class structure. Early phases of many software development projects emphasize the design of a conceptual data model. Such a design can be detailed into a logical data model. In later stages, this model may be translated into physical data model. However, it is also possible to implement a conceptual model directly.
+
 ## Types of Data
-Philisophically, data can literally be anything. However, it is useful to taxonomize digital data into 
+Philisophically, data can literally be anything. However, it is useful to taxonomize digital data into three categories: unstructured, semi-structured, and structured data. It will be useful to work backwards from the most restric 
 
 
 
