@@ -31,7 +31,7 @@ WHERE People.Citizenship = Countries.Citizenship;
 To allow for such inferences, databases make a crucial assumption called a "closed-world" assumption. The *closed-world assumption* (CWA) is the presumption that a fact that is true is also known to be true. Conversely, everything not currently known to be true, is false. For example, a database will not answer the question "What is Pauls's citizenship?" because such a fact is not present in the database. Languages such as SQL and Datalog are rooted in the closed-world assumption.
 
 ## Data as "samples"
-What if we collected the names of 100 people and all of them were French citizens---Another way to interpret 
+Let's go back to this question "What is Pauls's citizenship?". A standard database would not answer this question. But what Another way to interpret 
 
 
 ## Readings
