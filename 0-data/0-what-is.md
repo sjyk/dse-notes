@@ -55,8 +55,9 @@ Philisophically, data can literally be anything. However, it is useful to taxono
    - NULL values. Missing or uncertain data can only be conveyed with a NULL/empty cell. 
 
 For, example a table of two columns A and B is:
+
 | A  | B |
-|----|---|
+|---|---|
 | -1 | 1 |
 | 0  | 0 |
 | 1  | 1 |
