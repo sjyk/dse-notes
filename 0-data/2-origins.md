@@ -5,12 +5,14 @@ It seems like data is everywhere...so what can we do with it? There are really t
 We can interpret data as a representation of facts about the world. A *database* holds such facts and allows users to make principled inferences from these facts using a *query language*. This is a bit abstract so let's think about a concrete example. Suppose we know the following facts: Mary is a citizen of France, Jenny is a citizen of France, and all French citizens wear hats. We can define two tables to represent this information:
 
 People:
+
 | Name  | Citizenship |
 |-------|-------------|
 | Mary  | France      |
 | Jenny | France      |
 
 Countries:
+
 | Citizenship | Wears |
 |-------------|-------|
 | France      | hats  |
