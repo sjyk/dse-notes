@@ -29,6 +29,13 @@ Sheet 1. Car:
             Col 3. Year <Date>
             Col 4. Color <Text>
 ```
+
+| Make  | Model | Year | Color |
+|----|----|----|----| 
+| Toyota | Corolla | 2018 | Red |
+| Toyota | Camry | 2015 | Blue |
+| Honda | Fit | 2014 | Black
+
 The data model could additionally consist of references to other entities (like owners) and references to other sheets and so on. We call such a model a *logical data model*, a conceptual model of how to use the data from an end-user perspective:
 
 - Logical data model: A model that describes the semantics of the data, as represented by the particular data analysis technology. 
@@ -47,6 +54,7 @@ Philisophically, data can literally be anything. However, it is useful to taxono
    - Atomic values. Each cell (a row, column pair) is generally considered to be an atomic value---i.e., it is not readily divisible--such as, an integer, a date, a string. 
    - NULL values. Missing or uncertain data can only be conveyed with a NULL/empty cell. 
 
+For, example a table of two columns A and B is:
 | A  | B |
 |----|---|
 | -1 | 1 |
