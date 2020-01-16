@@ -4,7 +4,7 @@ Now that we understand what data is and how to interpret it, let's wrap our head
 ## Data Science Life Cycle
 First, it is important to understand the *data life cycle*--- the stages that a particular unit of data goes through from its initial generation or capture to its analysis:
 
-- Generation: Data comes into an organization, usually through data entry, acquisition from an external source or signal reception, such as transmitted sensor data.
+- Generation: Data comes into an organization through data entry, acquisition from an external source or signal reception, such as transmitted sensor data.
 
 - Exchange: The data are processed prior to its use to match the format desired by the analysts downstream. Data are extracted , transformed, and formatted appropriately. In this stage, data errors or bugs are often identified and fixed.
 
@@ -19,9 +19,10 @@ First, it is important to understand the *data life cycle*--- the stages that a 
 For each one of these stages, we will provide some examples of tools that are used.
 
 ## Generation
-https://kafka.apache.org/
+Data has to come from somewhere. Systems are needed to route data from the point of generation to the appropriate analytics framework. For example, we may want a system that collects log messages generated from a web application and stores them in a database. Or, we may want a system to listen to a motion sensor and generate a data record every time a value exceeds a certain threshold. These systems called "streaming" platforms offer following basic capabilities: (1) publish and subscribe to streams of records, (2) process streams of records as they occur, and (3) store streams of records in a fault-tolerant durable way. Examples include, Apache Kafka, IBM Streams, Apache ZooKeeper. These systems are designed for high-throughput applications--reading data from many parallel sources at once and aggregating them together. 
 
 ## Exchange
+
 https://www.tamr.com/
 https://www.trifacta.com/
 spark
