@@ -1,5 +1,5 @@
-# Systems for Data Science
-Now that we understand what data is and how to interpret it, let's wrap our heads around some of the marketing terms used to describe systems for data science. 
+# Data Organization
+Now that we understand what data is and how to interpret it, let's wrap our heads how data is stored and governed.
 
 ## Data Science Life Cycle
 First, it is important to understand the *data life cycle*--- the stages that a particular unit of data goes through from its initial generation or capture to its analysis:
@@ -16,29 +16,12 @@ First, it is important to understand the *data life cycle*--- the stages that a 
 
 - Maintenance: When new data arrive, the analysis is often redone or modified.
 
-For each one of these stages, we will provide some examples of tools that are used.
+In your previous classes, the first three steps of this pipeline were largely taken for granted. You were given datasets that
+already appeared in ready-to-analyze formats (maybe up to small amounts of cleaning or transformation). This class will deep dive into some of the complex considerations that go into designing data infrastructure.
 
-## Generation
-Data has to come from somewhere. Systems are needed to route data from the point of generation to the appropriate analytics framework. For example, we may want a system that collects log messages generated from a web application and stores them in a database. Or, we may want a system to listen to a motion sensor and generate a data record every time a value exceeds a certain threshold. These systems called "streaming" platforms offer following basic capabilities: (1) publish and subscribe to streams of records, (2) process streams of records as they occur, and (3) store streams of records in a fault-tolerant durable way. Examples include, Apache Kafka, IBM Streams, Apache ZooKeeper. These systems are designed for high-throughput applications--reading data from many parallel sources at once and aggregating them together. 
+## Data Governance
+Data governance is the overall management of the availability, usability, integrity and security of data used in an enterprise. Businesses benefit from data governance because it ensures data is consistent and trustworthy. Increasingly, these considerations are important in the design of data systems.
 
-## Exchange
-
-https://www.tamr.com/
-https://www.trifacta.com/
-spark
-
-## Storage
-https://www.oracle.com/database/
-Data Lake
-
-## Analysis
-Pandas
-Tensorflow
-R
-spark
-
-## Decision
-Tensorflow serving
-
-## Maintenance
-ML Flow
+## Readings
+Data Science Workflow: Overview and Challenges. Philip Guo. October 30, 2013
+https://cacm.acm.org/blogs/blog-cacm/169199-data-science-workflow-overview-and-challenges/fulltext
