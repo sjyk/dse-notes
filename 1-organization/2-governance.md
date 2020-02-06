@@ -26,8 +26,9 @@ This seems like a lot of work, why even do it? Here are some reasons:
 - Reproducibility: If one needs to reproduce an analysis, a detailed description of the data's movement from source to final state is required.
 - Compliance and Regulatory: Increasingly there are legal frameworks like GDPR that restrict how data can be used and how can be moved.
 
+## Data Access Restrictions
+Another important part of data governance is figuring out who can use your data. 
+
+
+
 ## Data Privacy
-
-
-
-
