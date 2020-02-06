@@ -1,5 +1,5 @@
 # Data Organization
-Now that we understand what data is and how to interpret it, let's wrap our heads how data is stored and governed.
+Now that we understand what data is and how to interpret it, let's wrap our heads how data is stored and governed. These may seem like un-academic topics, but are increasingly important as the scale and scope of data driven applications grow. We will see different choices can greatly affect the usability and cost of building such applications.
 
 ## Data Science Life Cycle
 First, it is important to understand the *data life cycle*--- the stages that a particular unit of data goes through from its initial generation or capture to its analysis:
@@ -17,10 +17,7 @@ First, it is important to understand the *data life cycle*--- the stages that a 
 - Maintenance: When new data arrive, the analysis is often redone or modified.
 
 In your previous classes, the first three steps of this pipeline were largely taken for granted. You were given datasets that
-already appeared in ready-to-analyze formats (maybe up to small amounts of cleaning or transformation). This class will deep dive into some of the complex considerations that go into designing data infrastructure.
-
-## Data Governance
-Data governance is the overall management of the availability, usability, integrity and security of data used in an enterprise. Businesses benefit from data governance because it ensures data is consistent and trustworthy. Increasingly, these considerations are important in the design of data systems.
+already appeared in ready-to-analyze formats (maybe up to small amounts of cleaning or transformation). In this unit, we are going zoom in on the storage layer and think about the different choices we have store data. Storage is sort of the key stone of this process. There are really only a handful of different design choices but those choices can greatly affect upstream and downstream processes.
 
 ## Readings
 Data Science Workflow: Overview and Challenges. Philip Guo. October 30, 2013
