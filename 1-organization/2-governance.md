@@ -27,8 +27,22 @@ This seems like a lot of work, why even do it? Here are some reasons:
 - Compliance and Regulatory: Increasingly there are legal frameworks like GDPR that restrict how data can be used and how can be moved.
 
 ## Data Access Restrictions
-Another important part of data governance is figuring out who can use your data. 
+Another part of data governance is figuring out who can and should use your data. Let's talk a bit about why this is important. 
 
+### Potential Harm
+When collecting any data the first thing to assess is "potential harm", or how could this data be used to adversely affect those who contributed it monetarily, physically, emotionally, or otherwise. Potential harm is independent of the original intent or purpose of the data collection. Potential harm does not necessarily require a data leakage, it could also be internal use for the same data. For example,
 
+- Tinder records, if leaked, could significantly affect the lives of many users.
+- Transaction data originally collected to evaluate sales could be repurposed to score the credit-worthiness of customers.
+- Credit card data can track the movements of users.
 
-## Data Privacy
+It is good practice to list all reasonable potential adverse uses of a dataset before collecting it. Not only is it a customer friendly practice, it can convey due dilegence to any regulatory authority that may question the collection/use/processing of the data.
+
+### Personal Data
+Personal data is data that can be tied to a single "natural" person, such has electronic health records, financial data, and eduction data. Such data is often regulated much more stringently than any other type of data. The key standard with personal data is "identifiability": linking a person's name or charachteristics to a key, uniquely identifiable attribute. For example, student id numbers are consider sensitive attributes as they can uniquely identify students under FERPA. 
+
+### Principle of Minimum Privelege
+The principle of least privilege works by allowing only enough access to perform the required job. In an IT environment, adhering to the principle of least privilege reduces the risk of attackers gaining access to critical systems or sensitive data by compromising a low-level user account, device, or application. Implementing the POLP helps contain compromises to their area of origin, stopping them from spreading to the system at large.
+
+## Readings
+Joanna Redden and Jessica Brand. Data	Harm Record. 2017. https://datajustice.files.wordpress.com/2017/12/data-harm-record-djl2.pdf
