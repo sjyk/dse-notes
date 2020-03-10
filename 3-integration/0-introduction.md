@@ -6,4 +6,4 @@
 
 - Edit distance
 
-- SimHash
+- Transitive Closure
