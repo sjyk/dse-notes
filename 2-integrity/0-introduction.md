@@ -18,10 +18,5 @@ Definition of incorrect:
 - Semantic: data must preserve some certain relationships.
 
 ## Cost of Faulty Data
-While it is hard to accurately pin down the cost of faulty data, numerous industry surveys have tried to assess the impact that faulty data can have on an organization
-
-- CRC
-- Hashing (Merkle Tree)
-- Integrity Constraints
-- Functional Dependencies
-- Referential Integrity
+Data that businesses employ could come from anywhere, and support key business decisions. 
+Ride-hailing apps will purchase location data on a regular basis to ensure their maps are up-to-date and accurate; marketing firms will purchase location data on consumer travel patterns allowing them to sell out-of-home advertising space; and a new healthcare start-up will purchase data on health patterns and trends, to provide some examples. While it is hard to accurately pin down the cost of faulty data, numerous industry surveys have tried to assess the impact that faulty data can have on an organization. Gartner suggest that bad data is estimated to cost the US more than $3 trillion per year. 
