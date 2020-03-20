@@ -26,9 +26,11 @@ Functional dependencies can span more than two columns. Make AND Model determine
 ## Why Do We Care?
 Functional dependencies model many important constraint relationships in a database. We can define a set of functional dependencies and test whether our database actually satisfies them.
 
-* Key Constraints: An attribute is a "key" if it functionally determines all other attributes (think username, ssn, etc.). 
+* Key Constraints: An attribute is a "key" if it functionally determines all other attributes. It is often desirable to enforce that some attribute (like a username) is a key, that means it has to uniquely determine all other properties (no two people can have the same username).
 
-* One-to-One Constraints: If two attributes functionally determine each other they are basically the same information but translated into another domain.
+* One-to-One Constraints: If two attributes functionally determine each other they are basically the same information but translated into another domain. Think of taking a column with the values "red", "green", "blue" and mapping them to 1,2,3 respectively. Representing such relationships at a functional depenency allows us to enforce that every change to one column is also reflected in the other.
+
+* Privacy: Privacy study is often concerned with latent functional dependencies, where non-key attributes and uniquely identify a person. 
 
 * Machine Learning: Almost all of machine learning is based on "function approximation", i.e., fitting a function that best represents a relationship between multiple data columns. 
 
