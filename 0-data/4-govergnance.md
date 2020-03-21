@@ -1,4 +1,4 @@
-# Data Organization: Data Governance
+# Data Governance
 Data governance is the overall management of the availability, usability, integrity and security of data used in an enterprise. Businesses benefit from data governance because it ensures data is consistent and trustworthy. Increasingly, these considerations are important in the design of data systems.
 
 ## Data Provenance
