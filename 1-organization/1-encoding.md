@@ -13,7 +13,7 @@ Variable length data like arrays and strings take up a different number of bits 
 ## Representing Sets of Data
 Those of you who have taken an introductory computer architecture course should be very familar with sizing data and allocating storage or memory to data structures. However, the story changes a bit when we start considering collections of data. Consider a list of strings:
 
-| Color |  | | ...    | |
+| Color |        |        | ...    |        |         |
 |-------| -------| -------| ...    | -------| -------|
 | Red   | Black   |  Red   | ...   | Green   | Blue  |
  
@@ -26,7 +26,7 @@ This world view is pessimistic in a sense--real-world data often follow sensible
 
 For example, we might have prior knowledge that there are only 4 possible colors {red, blue, green, black} in this dataset. In that case,  we could assign a 2-bit number to each of the colors {00, 01, 10, 11}, and store a lookup table to translate between strings and numbers {red=>00, blue=>01, green=>10, black=>11}. The actual list is then stored far more efficiently '0011...1001':
 
-| Color |  | | ...    | |
+| Color |        |        | ...    |        |         |
 |-------| -------| -------| ...    | -------| -------|
 | 00   | 11   |  00  | ...   | 10   | 01  |
 
