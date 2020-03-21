@@ -47,6 +47,6 @@ Let's analyze this example in detail assuming 8-bit characters including termina
 
 * Total cost of storing the lookup table: 5.25 characters per string + 2 bits for each code = 176 bits
 
-So the tradeoff is that storing the raw strings scales in terms of storage as $f(n) = 42n$ and storing the encoded strings scales as $f(n) = 2n + 176$--if you store more than 5 strings the encoding representation is more efficient and get better and better the more store. 
+So the tradeoff is that storing the raw strings scales in terms of storage as f(n) = 42n and storing the encoded strings scales as f(n) = 2n + 176--if you store more than 5 strings the encoding representation is more efficient and get better and better the more store. 
 
 This type of data encoding is called *dictionary encoding* where a variable-sized, infinite domain data type (like strings or arrays) are mapped down to a fixed-length domain based on prior assumptions. It should be obvious from the example that this really only works well if the list of strings is highly repetitive (because there is an overhead to storing the lookup table). This turns out to be a general principle of *data compression*, data that are repetitive or redundant are easier to compress. 
