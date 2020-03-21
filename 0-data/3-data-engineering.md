@@ -4,7 +4,24 @@ The process of building such systems often involves multiple different framework
 considerations. To be able to qualitatively compare systems, we highlight some of the main tradeoffs that every data 
 engineer needs to know. 
 
-## Timeliness of Decision
+## Data Science Life Cycle
+First, it is important to understand the *data science life cycle*--- the stages that a particular unit of data goes through from its initial generation or capture to its analysis:
+
+- Generation: Data comes into an organization through data entry, acquisition from an external source or signal reception, such as transmitted sensor data.
+
+- Exchange: The data are processed prior to its use to match the format desired by the analysts downstream. Data are extracted , transformed, and formatted appropriately. In this stage, data errors or bugs are often identified and fixed.
+
+- Storage: The data are stored in a system like a database that allows analysts to query and search for relevant data.
+
+- Analysis: A data analyst uses the data in a desired way to build a model or write a report.
+
+- Decision: The results of the analysis are used to make a decision (either manual or automated).
+
+- Maintenance: When new data arrive, the analysis is often redone or modified.
+
+ The goal of data engineer is to make this life cycle possible by building the right software tools. A key piece is ensuring that decisions derived from data can be made in a timely and reliable way.
+
+## How Fast is Fast Enough?
 Data is only useful if it helps us make decisions in the real-world. Real-world decisions have requirements on their 
 timeliness. For example, choosing to shut down a chemical process after it has catastrophically failed is pointless. 
 Or, less dramatically, if a user clicks on a link on a website, a triggered database query has a limited time before the
@@ -26,7 +43,7 @@ sometimes useful to think about what the dominant contributor to latency is.
 The solution to being I/O bound isn't necessarily to get more memory or buy faster disk. In some situations, the access 
 algorithm could be designed around the I/O, memory or cache limitations. 
 
-## Simultaneous Decisions and Arrival Rates
+### Simultaneous Decisions and Arrival Rates
 It is easy to get caught up with latency as a primary measure of system performance, but it is actually not that meaningful 
 in many contexts. Consider this thought experiment. Imagine, I have a compute node that can process one record at a time. If 
 another record arrives while I'm processing, I will have to wait until the one that is currently processing completes. Suppose, 
@@ -34,5 +51,8 @@ I have one system that processes records at 1s/record, and another system that p
 (records arrive at which ever one is free). 
 The latency of the first system is faster: for a single record, regardless of the number of nodes you have it will still take 
 1.5s. However, the arrival rate of data can be supported by the second system is much higher (1.3 records/sec---i.e., 1/0.75).
-This difference gives us the measure of throughput: throughput is the rate of production of results or the rate at which something 
-is processed.
+This difference gives us the measure of throughput: throughput is the rate of production of results or the rate at which something is processed.
+
+## Readings
+Data Science Workflow: Overview and Challenges. Philip Guo. October 30, 2013
+https://cacm.acm.org/blogs/blog-cacm/169199-data-science-workflow-overview-and-challenges/fulltext
