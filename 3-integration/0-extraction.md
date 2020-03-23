@@ -39,6 +39,7 @@ It should be clear from the examples above that parsing a delimited file is hard
 Let's walk through a simplified delimited format where there are no escaped characters and quotes always enclose a field:
 
 name, id, comments
+
 Bob Davis,1,"Davis, Bob"
 
 We can define the following states:
