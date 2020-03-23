@@ -71,8 +71,7 @@ All of the characters that correspond to "start field" states (the ones), are th
 
 ![State Machine](https://sourcemaking.com/files/sm/state_delphi.png)
 
-## Parsing Unstructured Data
-Sometimes we have to extract structured information from unstructured data (like raw text). Techniques that we often use for such tasks are:
 
-* Regular expressions (extract data that conform to certain patterns)
-* Natural language processing (use language models for identifying relevant data)
+## Working With Strings
+The core issue at play here is that most data arrive into our system in string format and we have to convert them into some sort of a structured representation. Strings on their own are an amazingly general data representation.
+Every string is a variable-length array of elements from an alphabet (a set of possible symbols). Let $\Sigma$ be an alphabet, $s$ is a finite sequence of elements from $\Sigma$. Examples of $\Sigma$ are the latin alphabet (i.e., upper and lower-case A-Z), the binary alphabet (i.e., 0-1), or the genetic alphabet (i.e., ATGC). 
