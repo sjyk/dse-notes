@@ -71,11 +71,8 @@ All of the characters that correspond to "start field" states (the ones), are th
 
 ![State Machine](https://sourcemaking.com/files/sm/state_delphi.png)
 
-## Transform
+## Parsing Unstructured Data
+Sometimes we have to extract structured information from unstructured data (like raw text). Techniques that we often use for such tasks are:
 
-
-### Binary Formats
-
-
-
-## Sub-attribute Parsing
+* Regular expressions (extract data that conform to certain patterns)
+* Natural language processing (use language models for identifying relevant data)
