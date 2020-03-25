@@ -9,14 +9,14 @@ The topics are organized into units that can be re-organized based on the instru
 
 | Lecture | Topic | Readings |
 |--------|---------| ------- |
-| | *Unit 0* Trends, Storage, Governance |   |
-| W1.L1 | Perspectives on Data | 0.0, 0.1 |
-| W1.L2 | What is "Big" Data | 0.2, 0.3 |
-| W1.L3 | Data Science Life Cycle | 1.0 |
-| W2.L1 | Data Storage/Retreival | 1.1 |
-| W2.L2 | Data Governance | 1.2 |
+| | *Unit 0* Data Organization |   |
+| W1.L1 | What is "Big" Data | 0.0, 0.2, 0.3 |
+| W1.L2 | Perspectives on Data | 0.1 | 
+| W1.L3 | Data Management Infrastructure | 0.4, 1.0 |
+| W2.L1 | Storage/Dictionary Encoding | 1.1 |
+| W2.L2 | Huffman Encoding | 1.2 |
+| W2.L3 | Indexing Structures | 1.3 |
 | | *Unit 1* Data Integrity |   |
-| W2.L3 | Intro to Data Integrity | 2.0 |
 | W3.L1 | CRC and Bit-wise Integrity | 2.1 |
 | W3.L2 | Crypotgraphic Integrity | 2.2 |
 | W3.L3 | Integrity Constraints I | 2.3, 2.4 |
