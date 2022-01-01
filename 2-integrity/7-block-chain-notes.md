@@ -1,8 +1,8 @@
 # Notes on Block Chain and Crypto Currencies
-In the last several years, we've seen a rise in "crypto-currencies", or digital data that works as a medium of exchange. These notes help demystify the underlying technologies behind this trend and the essential parts that we (as savy observers of this trend) should understand.
+In the last several years, we've seen a rise in "crypto-currencies", or digital data that works as a medium of exchange. These notes help demystify the underlying technologies behind this trend and the essential parts that we (as savy observers) should understand.
 
 ## Motivation
-We're going to spend some time understanding exactly what crpyto-currencies are trying to fix. The following is largely my opinion but I think it is a useful way of thinking about it: cryptocurrencies are not about creating a new digital currency but about simplifying the complex trust relationships needed to make currency transactions work. This is hard to digest at first glance but let's see some examples.
+We're going to spend some time understanding exactly what problems crpyto-currencies are trying to fix. The following is largely my opinion but I think it is a useful way of thinking about it: cryptocurrencies are not about creating a new digital currency but about simplifying the complex trust relationships needed to make currency transactions work in our current world. This is hard to digest at first glance but let's see some examples.
 
 ### Commodities, Currencies, and Trust
 Imagine that you are a farmer living 8000 years ago (before the invention of money), and you need some new seeds for your farm. Your neighbor has exactly the seeds that you want, and you have an extra cow that you would be willing to trade for these seeds. Unfortunately, your neighbor tells you that he has no use for a cow and wants a pig instead. Stuck in this pickle, you would have to search your neighborhood for someone willing to trade a cow for a pig to eventually get the seeds that you need. This is exactly the problem that a "currency" solves: it sets a common medium of exchange that avoids having to organize 3-way, 4-way, or more bartering agreements on your own. You can sell your cow to anyone who needs a cow and receive some units of "currency" in exchange, and use those proceeds to buy seeds. You can now see why the invention of currency revolutionizes economics --- it opens up all sorts of options for buyers and sellers because now you don't have to find someone who is willing to trade a cow for a pig, just someone who is buying a cow. This example is a silly one, and probably historically inaccurate, but it sets up some two key concepts that will be useful later.
@@ -185,9 +185,5 @@ Adding digital signatures to the block chain gives us all of the properties we h
 ### Summary
 In short, the block chain is a method of creating replicated, tamper-free ledgers. Crypto-currencies are currencies whose transactions are backed and validated by block-chain databases.
 
-## Sustainability Issues and Proof-of-Work
-TODO
-
-## Issuing Currency
-TODO
+## Issuing Currency and Proof-of-Work
 
